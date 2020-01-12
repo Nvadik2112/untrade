@@ -22,6 +22,15 @@ body {
 	z-index: 5;
 	
 }
+
+.header__mask {
+	position: absolute;
+	right: -360px;
+	height: 900px;
+	transition: all 0.8s ease-in-out;
+	overflow: hidden;
+}
+
 .arrow-scroll {
 	position: fixed;
 	bottom: 20px;
@@ -44,28 +53,32 @@ header {
 .leo {
 	background: url("img/kenya-3002458_960_720.png") no-repeat center center;
 	background-size: cover;
-	transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
+	left:0;
+    top:0;
+	transition: .5s ease-in-out;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	-ms-transition: .5s ease-in-out;
 }
 
 .hawk {
 	background: url("img/bird-4071781_1920.png") no-repeat center center;
 	background-size: cover;
-	transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
+	transition: .5s ease-in-out;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	-ms-transition: .5s ease-in-out;
+	left:0;
+    top:0;
 }
 
 .header {
 	margin-top: 60px;
 }
 
-.header__mask {
-	position: absolute;
-	right: -360px;
-	height: 900px;
-	transition: all 0.8s ease-in-out;
-	overflow: hidden;
-}
+
 
 
 @media (max-width: 1000px) {
