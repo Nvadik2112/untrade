@@ -1,0 +1,370 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Light';
+  src: url("fonts/Myriad-Pro-Light.ttf");
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 28px;
+  font-family: 'Myriad Pro Light';
+}
+
+.block, .menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 1000px;
+  z-index: 0;
+}
+
+.block {
+  background: url("/image/bg.png") no-repeat center center;
+  background-size: cover;
+}
+
+.block__main {
+  position: relative;
+  max-width: 1200px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.block__title {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: 260px;
+  margin-bottom: 0px;
+  z-index: 2;
+}
+
+.block__title h1 {
+  font-size: 48px;
+}
+
+.block__buttons {
+  position: absolute;
+  width: 1200px;
+  margin-top: 400px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 0;
+}
+
+.block__button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 365px;
+  height: 365px;
+  z-index: 1;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+}
+
+.block__button:focus {
+  outline: none;
+}
+
+.block__button:hover:before {
+  content: '';
+  border: 1px solid #009e82;
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+}
+
+.block__button-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.block__button-item h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  z-index: 10;
+  font-size: 28px;
+  font-family: 'Myriad Pro Light';
+}
+
+.menu {
+  background: url("/image/menu.png") no-repeat center center;
+  background-size: cover;
+  flex-wrap: wrap;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+}
+
+.menu__header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 117px;
+  border-bottom: 1px solid;
+  width: 100%;
+  border-color: rgba(181, 181, 181, 0.7);
+}
+
+.menu__bar {
+  display: flex;
+  justify-content: space-between;
+  height: 115px;
+  width: 1200px;
+}
+
+.menu__bar-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 345px;
+  cursor: pointer;
+}
+
+.menu__bar-item h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.menu__bar-item:hover {
+  height: 117px;
+  border-bottom: 2px solid #009e82;
+  color: #009e82;
+}
+
+.menu__main {
+  width: 1200px;
+  display: flex;
+  justify-content: left;
+  margin-top: 200px;
+  position: relative;
+  font-size: 18px;
+  flex-wrap: wrap;
+  padding-right: 500px;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+}
+
+.menu__main-text {
+  position: absolute;
+  margin: 0px;
+  padding-bottom: 0px;
+  padding-right: 500px;
+}
+
+.menu__main-list {
+  position: absolute;
+  margin-top: 120px;
+  padding-right: 500px;
+}
+
+.menu__main-list h3 {
+  font-size: 24px;
+}
+
+.menu__main-list ol {
+  padding: 0px;
+  list-style-type: none;
+  counter-reset: num;
+}
+
+.menu__main-list li::before {
+  content: counter(num) " ";
+  counter-increment: num;
+  color: #009e82;
+  font-size: 32px;
+}
+
+.menu__button {
+  position: absolute;
+  width: 1200px;
+  display: flex;
+  margin-top: 720px;
+}
+
+.menu__button button {
+  background-color: #009e82;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  height: 50px;
+  width: 160px;
+  color: #feffff;
+}
+
+.active {
+  height: 117px;
+  border-bottom: 2px solid #009e82;
+  color: #009e82;
+}
+
+.animate {
+  position: absolute;
+  width: 1200px;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile {
+  font-family: 'Myriad Pro Light';
+  height: 100vh;
+  min-height: 650px;
+  width: 100%;
+  min-width: 330px;
+  display: flex;
+  justify-content: center;
+  background: url("/image/bg.png") no-repeat center center;
+  background-size: cover;
+  overflow-y: scroll;
+}
+
+.mobile__main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+  width: 92%;
+}
+
+.mobile__title {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  z-index: 2;
+  text-align: center;
+}
+
+.mobile__title h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile__trades {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: inherit;
+  margin-top: 160px;
+  min-width: 300px;
+  width: 100%;
+}
+
+.mobile__item {
+  width: 100%;
+}
+
+.mobile__trade {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  height: 68px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.mobile__trade-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.mobile__trade-title {
+  width: 80%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.mobile__trade-title h2 {
+  font-size: 19px;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile__trade-arrow, .mobile__trade-logo {
+  width: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile__trade-arrow {
+  cursor: pointer;
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+}
+
+.mobile__trade-text p {
+  font-size: 16px;
+}
+
+.mobile__trade-item {
+  width: 100%;
+}
+
+.mobile__trade-list {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.mobile__trade-list h3 {
+  font-size: 20px;
+}
+
+.mobile__trade-list ol {
+  padding: 0px;
+  list-style-type: none;
+  counter-reset: num;
+}
+
+.mobile__trade-list li::before {
+  content: counter(num) " ";
+  counter-increment: num;
+  color: #009e82;
+  font-size: 32px;
+}
+
+.mobile__button {
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.mobile__button button {
+  background-color: #009e82;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  height: 50px;
+  width: 160px;
+  color: #feffff;
+}

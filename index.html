@@ -2,186 +2,225 @@
 <html lang="ru">
 
 <head>
-  <!-- Важная техническая информация для браузера -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta name="description" content="Animals">
-  <meta name="author" content="Animals">
-
-  <!-- <link rel="icon" href="0001-002-.png"> -->
-  <title>Animals</title>
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <link href="style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/index.css">
+    <link href="//db.onlinewebfonts.com/c/279e1c8a5dee5fb447747703926c8cf4?family=PF+DinText+Pro" rel="stylesheet"
+        type="text/css"/>    
 </head>
 
 <body>
-  <div class="container">
-    <div class="row ">
-      <div class='col-lg-11'></div>
-      <div class='col-lg-1'>
-        <img src="img/tele-branches.png" alt="" class="body__branches">
-        <img class="header__mask" src="img/39.png" alt="Леопард">
-        <img class='arrow-scroll' src="img/slider_right.svg">
-      </div>
+    <div class="main" style="display: none">
+        <div class='block'>
+            <div class='block__main'>
+                <div class="animate">
+                    <div class='block__title'>
+                        <h1>Выберите способ заработка</h1>
+                    </div>
+                    <div class='block__buttons'>
+                        <button class="block__button">
+                            <div class="block__button-item">
+                                <img src="/image/iconsell.svg" alt="Торговать">
+                                <h2>Торговать</h2>
+                            </div>
+                        </button>
+                        <button class="block__button">
+                            <div class="block__button-item">
+                                <img src="/image/iconinvest.svg" alt="Инвестировать">
+                                <h2>Инвестировать</h2>
+                            </div>
+                        </button>
+                        <button class="block__button">
+                            <div class="block__button-item">
+                                <img src="/image/iconsearch.svg" alt="Привлекать инвесторов">
+                                <h2>Привлекать инвесторов</h2>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu" style="display: none">
+            <div class='menu__header'>
+                <div class='menu__bar'>
+                    <div class="menu__bar-item">
+                        <h2>Торговать</h2>
+                    </div>
+                    <div class="menu__bar-item">
+                        <h2>Инвестировать</h2>
+                    </div>
+                    <div class="menu__bar-item">
+                        <h2>Привлекать инвесторов</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="menu__main">
+                <div class='menu__main' style="display: none" id="seller">
+                    <div class="menu__main-text">
+                        <p>Если вы ищете пассивный доход и предпочитаете, чтобы деньги для вас зарабатывал тот, кто
+                            умеет
+                            это
+                            делать, тогда попробуйте ЛАММ. ЛАММ – это сервис копирования сделок успешных трейдеров.
+                            Доходность
+                            ни
+                            чем не ограничена!
+                        </p>
+                    </div>
+                    <div class='menu__main-list'>
+                        <ol>
+                            <h3>Как это работает</h3>
+                            <li>Вы выбираете управляющего из рейтинга по фильтру Options</li>
+                            <li> Подключаете свой счет к счету Управляющего</li>
+                            <li> На вашем счете начинается копирование сделок</li>
+                            <li> Обратите внимание, что вы не перечисляете свои деньги Управляющему. <p>Все ваши
+                                    средства
+                                    остаются
+                                    на Вашем счете.</p>
+                            </li>
+                            <li>Вы можете подключиться к нескольким Управляющим одновременно.</li>
+                            <li> Вы можете отключиться от Управляющих в любой момент.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class='menu__main' style="display: none;" id="invest">
+                    <div class="menu__main-text">
+                        <p>Вкладывать деньги можно и нужно: в себя, в семью, в недвижимость, в фонды и акции, в
+                            банковские
+                            вклады, ну и в мечту, наконец. Главное, чтобы от вложений в итоге была польза. Сперва надо
+                            решить, какую сумму вы хотите инвестировать и какой результат желаете получить. Разберемся,
+                            куда
+                            можно вложить деньги.
+                        </p>
+                    </div>
+                </div>
+                <div class='menu__main' style="display: none;" id="search">
+                    <div class="menu__main-text">
+                        <p>Ваша основная цель – привлечь инвестора? Для этого Вы должны четко себе представлять его
+                            «портрет». Поэтому начать следует с определения групп адресатов, которых Ваш проект
+                            может
+                            заинтересовать. Для этого, в свою очередь, нужно понять на какой стадии развития
+                            находится
+                            Ваш
+                            бизнес: зарождения, становления, роста, зрелости или заката (в последний случай здесь
+                            рассматриваться, по понятным причинам, не будет). Очевидно, что инвесторы по-разному
+                            реагируют
+                            на предложение вложить деньги в компании, находящиеся на разных этапах развития.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class=menu__button>
+                <button>Продолжить</button>
+            </div>
+        </div>
     </div>
-  </div>
-
-  <header class='leo'>
-    <div class="container">
-      <div class="header row ">
-        <div class='col-lg-2 header__image'>
-          <img src='img/лис.png'>
-          <p>wild planet</p>
+    <div class="mobile" style='display: none'>
+        <div class="mobile__main">
+            <div class='mobile__title'>
+                <h1>Выберите способ заработка<h1>
+            </div>
+            <div class='mobile__trades'>
+                <div class='mobile__item'>
+                    <div class="mobile__trade">
+                        <div class="mobile__trade-logo">
+                            <img src="/image/iconsell.svg" alt="Торговать">
+                        </div>
+                        <div class='mobile__trade-title'>
+                            <h2>Торговать</h2>
+                        </div>
+                        <div class="mobile__trade-arrow">
+                            <img src="/image/show.svg" alt="показать">
+                        </div>
+                    </div>
+                    <div style="display: none" class='mobile__trade-item'>
+                        <div class="mobile__trade-text">
+                            <p>Если вы ищете пассивный доход и предпочитаете, чтобы деньги для вас зарабатывал тот, кто
+                                умеет
+                                это
+                                делать, тогда попробуйте ЛАММ. ЛАММ – это сервис копирования сделок успешных трейдеров.
+                                Доходность
+                                ни
+                                чем не ограничена!
+                            </p>
+                        </div>
+                        <div class='mobile__trade-list'>
+                            <ol>
+                                <h3>Как это работает</h3>
+                                <li>Вы выбираете управляющего из рейтинга по фильтру Options</li>
+                                <li> Подключаете свой счет к счету Управляющего</li>
+                                <li> На вашем счете начинается копирование сделок</li>
+                                <li> Обратите внимание, что вы не перечисляете свои деньги Управляющему. <p>Все ваши
+                                        средства
+                                        остаются
+                                        на Вашем счете.</p>
+                                </li>
+                                <li>Вы можете подключиться к нескольким Управляющим одновременно.</li>
+                                <li> Вы можете отключиться от Управляющих в любой момент.</li>
+                            </ol>
+                        </div>
+                        <div class=mobile__button>
+                            <button>Продолжить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class='mobile__item'>
+                    <div class="mobile__trade">
+                        <div class="mobile__trade-logo">
+                            <img src="/image/iconinvest.svg" alt="инвестировать">
+                        </div>
+                        <div class='mobile__trade-title'>
+                            <h2>Инвестировать</h2>
+                        </div>
+                        <div class="mobile__trade-arrow">
+                            <img src="/image/show.svg" alt="показать">
+                        </div>
+                    </div>
+                    <div style="display: none" class='mobile__trade-item'>
+                        <div class="mobile__trade-text">
+                            <p>Вкладывать деньги можно и нужно: в себя, в семью, в недвижимость, в фонды и акции, в
+                                банковские
+                                вклады, ну и в мечту, наконец. Главное, чтобы от вложений в итоге была польза. Сперва
+                                надо
+                                решить, какую сумму вы хотите инвестировать и какой результат желаете получить.
+                                Разберемся,
+                                куда
+                                можно вложить деньги.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class='mobile__item'>
+                    <div class="mobile__trade">
+                        <div class="mobile__trade-logo">
+                            <img src="/image/iconsearch.svg" alt="инвестировать">
+                        </div>
+                        <div class='mobile__trade-title'>
+                            <h2>Привлекать инвесторов</h2>
+                        </div>
+                        <div class="mobile__trade-arrow">
+                            <img src="/image/show.svg" alt="показать">
+                        </div>
+                    </div>
+                    <div style="display: none" class='mobile__trade-item'>
+                        <div class="mobile__trade-text">
+                            <p>Ваша основная цель – привлечь инвестора? Для этого Вы должны четко себе представлять его
+                                «портрет». Поэтому начать следует с определения групп адресатов, которых Ваш проект
+                                может
+                                заинтересовать. Для этого, в свою очередь, нужно понять на какой стадии развития
+                                находится
+                                Ваш
+                                бизнес: зарождения, становления, роста, зрелости или заката (в последний случай здесь
+                                рассматриваться, по понятным причинам, не будет). Очевидно, что инвесторы по-разному
+                                реагируют
+                                на предложение вложить деньги в компании, находящиеся на разных этапах развития.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-7">
-          <nav class='header__nav'>
-            <div class="nav"><a id='nav__main'>главная</a></div>
-            <div class="nav"><a id='nav__tele'>телепрограмма</a></div>
-            <div class="nav"><a id='nav__news'>новости</a></div>
-            <div class="nav"><a id='nav__projects'>проекты</a></div>
-            <div class="nav"><a id='nav__interest'>интересное</a></div>
-          </nav>
-        </div>
-        <div class="col-lg-3 header_logos">
-
-          <div class="header__logo">
-            <img class="logo" src='img/divider.png'>
-            <img class="logo href search" src="img/icon.png">
-            <img class="logo " src='img/divider.png'>
-            <img class="logo href twitter" src='img/Twitter.png'>
-            <img class="logo href facebook" src="img/Facebook.png">
-            <img class="logo href youtube" src="img/youtube-play-button.png">
-          </div>
-          <img class="header__branch" src='img/branch1.png'>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-7">
-          <img class='header__branches' src="img/branches.png" alt="">
-          <div class="header__subtitle">
-            <p>тень</p>
-            <p>леопарда</p>
-          </div>
-          <p class="header__premier">Премьера 10 ноября</p>
-        </div>
-        <div class='col-lg-5'>
-          <p class="header__pantera" data='Accipiter gentilis'>Panthera pardus</p>
-        </div>
-      </div>
     </div>
-  </header>
-  <main>
-    <div class="teleprogram">
-
-      <h1>ТЕЛЕПРОГРАММА</h1>
-      <div class="container">
-        <div class="row">
-          <div class='col-lg-12'>
-            <img src="img/greenspot.png" alt="" class="teleprogram__greenspot">
-          </div>
-        </div>
-      </div>
-      <div class="teleprogram__date">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-1">
-              <img src="img/slider_left.svg" alt="" type="image/svg+xml" class="slide__date-left">
-            </div>
-            <div class="col-lg-10 teledate">
-              <div class="teleprogram__data">
-                <p>07 ОКТ</p>
-              </div>
-              <div class="teleprogram__data">
-                <p>08 ОКТ</p>
-              </div>
-              <div class="teleprogram__data">
-                <p>09 ОКТ</p>
-              </div>
-              <div class="teleprogram__data" id='dis'>
-                <p>10 ОКТ</p>
-                <img class="teleprogram__greenborder" src='img/greenborder.png'>
-              </div>
-              <div class="teleprogram__data">
-                <p>11 ОКТ</p>
-              </div>
-              <div class="teleprogram__data">
-                <p>12 ОКТ</p>
-              </div>
-              <div class="teleprogram__data">
-                <p>13 ОКТ</p>
-              </div>
-
-            </div>
-            <div class="col-lg-1">
-              <img src="img/slider_right.svg" alt="" class="slide__date-right">
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="teleprogram__tv">
-        <div class="container">
-          <div class="row tv">
-            <div class="col-lg-3">
-              <div class="teleprogram__tvname">
-                <p class='teleprogram__title' id='current-tv'>Чудо животного мира.
-                  <br>Лисицы</p>
-                <p class='teleprogram__title'>Тающая Арктика</p>
-                <p class='teleprogram__title'>Земля снежного барса</p>
-                <p class='teleprogram__title'>Амурский тигр</p>
-                <p class='teleprogram__title'>Снежный дух Алтая</p>
-                <p class="teleprogram__title-all">Все расписание</p>
-
-              </div>
-            </div>
-            <div class="col-lg-9">
-              <div class="teleprogram__video">
-
-                <iframe width="800" height="450"
-                  src="https://vk.com/video_ext.php?oid=-16446518&id=170576515&hash=842ba39e3baead27" frameborder="0"
-                  webkitAllowFullScreen mozallowfullscreen allowfullscreen enablejsapi=1></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-
-            <div class="col-lg-12 teleprogram__button">
-              <div class="teleprogram__button-image current-image" style="display: none">
-                <img src="img/tavis-beck-coy3yqP8nMI-unsplash.png" width="250" height="180"
-                  alt="Чудо животного мира. Лисицы">
-                <p class="button__title">Чудо животного мира.<br>Лисицы</p>
-                <p class="button__time">29:32</p>
-              </div>
-              <div class="teleprogram__button-image">
-                <img src="img/ice-2062433_960_720.png" width="250" height="180" alt="">
-                <p class="button__title">Тающая Арктика</p>
-                <p class="button__time">3:23</p>
-              </div>
-              <div class="teleprogram__button-image">
-                <img src="img/wildlife-3229940__340.png" width="250" height="180" alt="Снежный барс">
-                <p class="button__title">Земля снежного барса</p>
-                <p class="button__time">3:16</p>
-              </div>
-              <div class="teleprogram__button-image">
-                <img src="img/1-920.jpg" width="250" height="180" alt="Амурский тигр">
-                <p class="button__title">Амурский тигр</p>
-                <p class="button__time">6:07</p>
-              </div>
-              <div class="teleprogram__button-image">
-                <img src="img/landscape-1622739_960_720.png" width="250" height="180" alt="Снежный дух Алтая">
-                <p class="button__title">Снежный дух Алтая</p>
-                <p class="button__time">26:07</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-  <script src="dist/main.js"></script>
 </body>
-
+<script src="dist/main.js"></script>
 </html>

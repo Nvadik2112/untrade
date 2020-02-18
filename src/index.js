@@ -1,13 +1,9 @@
 'use strict';
- 
-import teleProgramDate from './modules/teleProgramDate';
-import teleProgramVideo from './modules/teleProgramVideo';
-import headerSlider from './modules/headerSlider';
-import scroll from './modules/scroll';
-import arrowScroll from './modules/arrowScroll';
+import adapt from './modules/adapt';
+import menu from './modules/menu';
+import menuMobile from './modules/menuMobile';
 
-teleProgramDate();
-teleProgramVideo();
-headerSlider();
-scroll();
-arrowScroll();
+adapt();
+menu();
+menuMobile();
+

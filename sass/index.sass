@@ -1,0 +1,295 @@
+*,
+*::after,
+*::before 
+    box-sizing: border-box
+
+@font-face 
+	font-family: 'Myriad Pro Light'
+	src: url('fonts/Myriad-Pro-Light.ttf')
+       
+body
+    box-sizing: border-box
+    margin: 0
+    font-size: 28px
+    font-family: 'Myriad Pro Light'
+
+.block, .menu     
+    display: flex
+    justify-content: center   
+    width: 100%
+    height: 1000px 
+    z-index: 0
+
+.block
+    background: url("/image/bg.png") no-repeat center center
+    background-size: cover
+    &__main
+        position: relative   
+        max-width: 1200px
+        z-index: 1     
+        display: flex
+        justify-content: center   
+    &__title
+        position: absolute        
+        display: flex
+        justify-content: center
+        margin-top: 260px
+        margin-bottom: 0px
+        z-index: 2
+        h1
+            font-size: 48px
+    &__buttons
+        position: absolute
+        width: 1200px        
+        margin-top: 400px        
+        display: flex
+        justify-content: space-between   
+        z-index: 0       
+    &__button
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 100%
+        background-color: rgba(255, 255, 255, 0.5)
+        width: 365px
+        height: 365px
+        z-index: 1
+        cursor: pointer 
+        border: none
+        -webkit-transition: 0.3s all
+        -o-transition: 0.3s all
+        -moz-transition: 0.3s all
+        &:focus 
+            outline: none                           
+        &:hover:before 
+            content: ''            
+            border: 1px solid #009e82
+            width: 350px
+            height: 350px
+            border-radius: 100%
+            position: absolute
+            text-align: center
+            -webkit-transition: 0.3s all
+            -o-transition: 0.3s all
+            -moz-transition: 0.3s all
+    &__button-item        
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        z-index: 2
+        h2
+            margin-top: 30px
+            margin-bottom: 10px
+            z-index: 10
+            font-size: 28px
+            font-family: 'Myriad Pro Light'             
+.menu
+    background: url("/image/menu.png") no-repeat center center
+    background-size: cover
+    flex-wrap: wrap
+    -webkit-transition: 0.3s all
+    -o-transition: 0.3s all
+    -moz-transition: 0.3s all    
+    &__header
+        position: absolute
+        display: flex
+        justify-content: center
+        height: 117px
+        border-bottom: 1px solid  
+        width: 100%  
+        border-color: rgba(181, 181, 181, 0.7)        
+    &__bar        
+        display: flex
+        justify-content: space-between
+        height: 115px
+        width: 1200px      
+        &-item
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 345px
+            cursor: pointer
+            h2         
+                margin: 0
+                font-size: 28px
+            &:hover
+                height: 117px              
+                border-bottom: 2px solid #009e82
+                color: #009e82    
+    &__main
+        width: 1200px              
+        display: flex
+        justify-content: left
+        margin-top: 200px 
+        position: relative
+        font-size: 18px
+        flex-wrap: wrap
+        padding-right: 500px
+        -webkit-transition: 0.3s all
+        -o-transition: 0.3s all
+        -moz-transition: 0.3s all
+        &-text
+            position: absolute
+            margin: 0px
+            padding-bottom: 0px
+            padding-right: 500px
+        &-list
+            position: absolute
+            margin-top: 120px
+            padding-right: 500px
+            h3
+                font-size: 24px
+            ol
+                padding: 0px
+                list-style-type: none
+                counter-reset: num
+            li::before
+                content: counter(num) ' '
+                counter-increment: num
+                color: #009e82
+                font-size: 32px       
+    &__button
+        position: absolute
+        width: 1200px
+        display: flex
+        margin-top: 720px
+        button
+            background-color: #009e82
+            border-radius: 5px
+            border: none
+            font-size: 18px
+            height: 50px
+            width: 160px
+            color: #feffff                       
+.active              
+    height: 117px
+    border-bottom: 2px solid #009e82
+    color: #009e82
+.animate
+    position: absolute
+    width: 1200px
+    height: 1000px
+    display: flex
+    justify-content: center
+
+
+
+.mobile
+    font-family: 'Myriad Pro Light'
+    height: 100vh
+    min-height: 650px
+    width: 100%
+    min-width: 330px
+    display: flex
+    justify-content: center
+    background: url("/image/bg.png") no-repeat center center
+    background-size: cover
+    overflow-y: scroll   
+    &__main
+        position: relative
+        display: flex
+        justify-content: center
+        min-width: 300px
+        width: 92%
+        
+    &__title
+        position: absolute               
+        display: flex
+        justify-content: center
+        margin-top: 40px
+        margin-bottom: 0px
+        z-index: 2
+        text-align: center
+        h1
+            font-size: 36px
+            margin: 0
+            padding: 0     
+    &__trades
+        position: absolute               
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        width: inherit
+        margin-top: 160px        
+        min-width: 300px
+        width: 100%
+    &__item
+        width: 100%     
+    &__trade
+        margin: 0
+        display: flex
+        justify-content: space-around
+        height: 68px
+        margin-bottom: 10px
+        background-color: rgba(255, 255, 255, 0.6)
+        &-logo            
+            img
+                width: 40px
+                height: 40px
+        &-title
+            width: 80%
+            display: flex
+            justify-content: left
+            align-items: center
+            h2
+                font-size: 19px
+                margin: 0
+                padding: 0    
+        &-arrow, &-logo
+            width: 75px
+            display: flex
+            justify-content: center
+            align-items: center
+        &-arrow
+            cursor: pointer
+            transition: 0.3s all
+            -webkit-transition: 0.3s all
+            -o-transition: 0.3s all
+            -moz-transition: 0.3s all
+        &-text            
+            p
+                font-size: 16px
+        &-item
+            width: 100%
+        &-list            
+            margin-top: 10px
+            font-size: 16px            
+            h3
+                font-size: 20px
+            ol
+                padding: 0px
+                list-style-type: none
+                counter-reset: num
+
+            li::before
+                content: counter(num) ' '
+                counter-increment: num
+                color: #009e82
+                font-size: 32px      
+    &__button        
+        margin-top: 20px
+        width: 100%
+        margin-bottom: 20px
+        button
+            background-color: #009e82
+            border-radius: 5px
+            border: none
+            font-size: 18px
+            height: 50px
+            width: 160px
+            color: #feffff
+        
+    
+        
+        
+  
+  
+  
+
+
+        
+        
+
+
