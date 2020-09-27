@@ -25,7 +25,7 @@ body {
 }
 
 .block {
-  background: url("./image/bg.png") no-repeat center center;
+  background: url("../image/bg.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -110,7 +110,7 @@ body {
 }
 
 .menu {
-  background: url("./image/menu.png") no-repeat center center;
+  background: url("../image/menu.png") no-repeat center center;
   background-size: cover;
   flex-wrap: wrap;
   -webkit-transition: 0.3s all;
